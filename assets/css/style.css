@@ -214,65 +214,81 @@ section {
         margin: 0 0 30px;
     }
 
-    .hero-text h5{
+    .hero-text h5 {
         margin-bottom: 25px;
     }
 }
 
 @media (max-width: 1195px) {
-    section{
+    section {
         padding: 0 3%;
         transition: .2s;
     }
-    .hero-text{
+
+    .hero-text {
         padding-top: 115px;
     }
-    .hero-img{
+
+    .hero-img {
         text-align: center;
     }
-    .hero-img img{
+
+    .hero-img img {
         width: 560px;
         height: auto;
     }
-    .hero{
+
+    .hero {
         height: 100%;
         gap: 1rem;
         grid-template-columns: 1fr;
     }
-    .sidebar, .scroll-down{
+
+    .sidebar,
+    .scroll-down {
         display: none;
     }
 }
 
 @media (max-width: 990px) {
-    #menu-icon{
+    #menu-icon {
         display: block;
     }
-    .links{
+
+    .links {
         position: absolute;
         top: 100%;
-        right: -100%;    
-        width: 300px;
-        height: 40vh;
-        background-color: #4d9559;
+        right: -100%;
+        width: 285px;
+        height: 45vh;
+        /* Change the background color to a semi-transparent version */
+        background-color: rgba(21, 21, 21, 0.4);
+        /* Add the blur effect */
+        backdrop-filter: blur(10px);
         display: flex;
         align-items: center;
         flex-direction: column;
         padding: 50px 20px;
+        border-radius: 25px;
         transition: all 0.55s ease;
     }
-    .links a{
+
+    .links a {
         margin-left: 0;
         display: block;
         margin: 7px 0;
+        font-weight: 800;
     }
+
     .links.open {
         right: 0;
     }
 }
+
 @media (max-width: 680px) {
     .hero-img img {
         width: 100%;
         height: auto;
     }
 }
+
