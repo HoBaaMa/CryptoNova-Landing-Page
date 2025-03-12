@@ -59,7 +59,7 @@ header {
     height: 100%;
     width: 100%;
     min-height: 100vh;
-    background: linear-gradient(245.59deg, #4d9559 0%, #38703d 28.53%, #133917 75.52%);
+    background: linear-gradient(173deg, rgba(171, 107, 182, 1) 40%, rgba(3, 225, 255, 1) 96%);
     position: relative;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -111,7 +111,7 @@ section {
 .hero-text a {
     display: inline-block;
     color: #FFF;
-    background-color: #4d9559;
+    background-color: #03e1ff;
     border: 1px solid transparent;
     padding: 12px 30px;
     line-height: 1.4;
@@ -155,7 +155,7 @@ section {
 }
 
 .sidebar i:hover {
-    color: #4d9559;
+    color: #03e1ff;
     transform: translateY(-5px);
 }
 
@@ -251,7 +251,7 @@ section {
     .links{
         position: absolute;
         top: 100%;
-        right: 0;
+        right: -100%;    
         width: 300px;
         height: 40vh;
         background-color: #4d9559;
@@ -265,6 +265,14 @@ section {
         margin-left: 0;
         display: block;
         margin: 7px 0;
-
+    }
+    .links.open {
+        right: 0;
+    }
+}
+@media (max-width: 680px) {
+    .hero-img img {
+        width: 100%;
+        height: auto;
     }
 }
