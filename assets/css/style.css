@@ -7,10 +7,6 @@
     text-decoration: none;
 }
 
-body {
-    /* background: red; */
-}
-
 header {
     position: fixed;
     top: 0;
@@ -170,7 +166,7 @@ section {
     padding: 12px;
     font-size: 25px;
     color: #FFF;
-    background: #4d9559;
+    background: #ab6bb6;
     border-radius: 30px;
     transition: all .50s ease;
 }
